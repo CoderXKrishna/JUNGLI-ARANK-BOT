@@ -4,10 +4,10 @@
 _repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $KANISHKA_REPO == "DEADLY-KAAL-BOT" ]]
+    if [[ $KANISHKA_REPO == "JUNGLI-USERBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL0NvZGVyWEtyaXNobmEvSlVOR0xJLVVTRVJCT1QvYXJjaGl2ZS9tYWluLnppcA==" | base64 -d
-    elif [[ $KANISHKA_REPO == "DEADLY-KAAL-BOT" ]]
+    elif [[ $KANISHKA_REPO == "JUNGLI-USERBOT" ]]
     then
         echo "aHR0cHM6Ly9naXRodWIuY29tL0NvZGVyWEtyaXNobmEvSlVOR0xJLVVTRVJCT1QvYXJjaGl2ZS9tYWluLnppcA==" | base64 -d
     elif [[ $KANISHKA_REPO =~ $regex ]]
