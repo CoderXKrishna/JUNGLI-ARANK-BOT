@@ -4,22 +4,22 @@
 _repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $HELL_REPO == "DEADLY-KAAL-BOT" ]]
+    if [[ $KANISHKA_REPO == "DEADLY-KAAL-BOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RFQURMWS1GSUdIVEVSUy9NSUtBU0EtVVNFUkJPVC9hcmNoaXZlL21haW4uemlw" | base64 -d
-    elif [[ $HELL_REPO == "DEADLY-KAAL-BOT" ]]
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0NvZGVyWEtyaXNobmEvSlVOR0xJLVVTRVJCT1QvYXJjaGl2ZS9tYWluLnppcA==" | base64 -d
+    elif [[ $KANISHKA_REPO == "DEADLY-KAAL-BOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RFQURMWS1GSUdIVEVSUy9NSUtBU0EtVVNFUkJPVC9hcmNoaXZlL21haW4uemlw" | base64 -d
-    elif [[ $HELL_REPO =~ $regex ]]
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0NvZGVyWEtyaXNobmEvSlVOR0xJLVVTRVJCT1QvYXJjaGl2ZS9tYWluLnppcA==" | base64 -d
+    elif [[ $KANISHKA_REPO =~ $regex ]]
     then
-        if [[ $HELL_REPO_BRANCH ]]
+        if [[ $KANISHKA_REPO_BRANCH ]]
         then
-            echo "${HELL_REPO}/archive/${HELL_REPO_BRANCH}.zip"
+            echo "${KANISHKA_REPO}/archive/${KANISHKA_REPO_BRANCH}.zip"
         else
-            echo "${HELL_REPO}/archive/master.zip"
+            echo "${KANISHKA_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0RFQURMWS1GSUdIVEVSUy9NSUtBU0EtVVNFUkJPVC9hcmNoaXZlL21haW4uemlw" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL0NvZGVyWEtyaXNobmEvSlVOR0xJLVVTRVJCT1QvYXJjaGl2ZS9tYWluLnppcA==" | base64 -d
     fi
 }
 
